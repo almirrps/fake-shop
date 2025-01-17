@@ -14,3 +14,6 @@ DB_PORT	=>	Porta de conexão com o banco de dados PostgreSQL.
 
 ## Imagens no repositorio do Docker
 https://hub.docker.com/repository/docker/almirrpsdev/fake-shop/general
+
+## Comando para obter a senha do Grafana:
+kubectl get secret --namespace default grafana -o jsonpath="{.data.admin-password}" | base64 --decode ; echo
